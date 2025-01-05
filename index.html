@@ -1,727 +1,1285 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Rosyimuth</title>
 
-<head>
-  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
-  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
-  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
-  <!-- don't forget to remove this >>>>(google tag manager) script, if you are using this page/code -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMWDE0VTD3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/faviconchi.png"
+      type="image/x-icon"
+    />
 
-    gtag("config", "G-YMWDE0VTD3");
-  </script>
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <meta name="google-site-verification" content="zMNl24ruDnyqiliYwKNU_r09OkPCDKz0kMBtF9nqiCc" />
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
-  <!-- don't forget to remove this >>(google site verification meta tag) tag, if you are using this page/code -->
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#000" />
-  <meta name="description"
-    content="Rosyimuth | Portfolio, Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
-  <meta name="keywords"
-    content="Rosyimuth,Rosyimuth portfolio,Rosyimuth Portfolio,Rosyimuth site,Rosyimuth Site,Rosyimuth me,Rosyimuth web,Rosyimuth github,rosyimuth site,rosyimuth uiverse,uiverse,Rosyimuth uiverse,Rosyimuth frontend developer,frontend developer" />
-  <meta name="author" content="Rosyi" />
-  <meta property="og:image" content="https://www.rosyimuth.site/src/png/Preview-card-min.png" />
-  <meta property="og:title" content="Rosyimuth | Portfolio" />
-  <meta property="og:description"
-    content="Hi! My name is Rosyi. I'm a web developer and digital visual artist. Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <meta property="og:url" content="https://rosyimuth.site" />
-  <meta property="og:site_name" content="Rosyimuth Portfolio" />
+  <body>
+    <!-- #MAIN -->
 
-  <meta name="twitter:image:src" content="https://www.rosyimuth.site/src/png/Preview-card-min.png" />
-  <meta name="twitter:site" content="@Portfolio" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Rosyimuth | Portfolio" />
-  <meta name="twitter:description"
-  content="Hi! My name is Rosyi. I'm a web developer and digital visual artist. Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
-  <title>Rosyimuth | Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="src/png/favicon.png" />
-  <!-- aos cdn -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- google fonts-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+    <main>
+      <!-- #SIDEBAR -->
 
-<body class="body">
-  <audio loop="" id="audioPlayer" style="display: none">
-    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
-  </audio>
-  <div id="preloader"></div>
-  <noscript>Allow Javascript</noscript>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              class="profile-pic"
+              src="./assets/images/rosyi.png"
+              alt="Rosyidah Muthmainnah"
+              width="70"
+            />
+          </figure>
 
-  <header>
-    <div class="cursor-inner" id="cursor-inner"></div>
-    <div class="cursor-outer" id="cursor-outer"></div>
+          <div class="info-content">
+            <h1 class="name" title="Rosyidah Muthmainnah">Rosyidah Muthmainnah</h1>
 
-    <div class="navbar" id="navbar">
-      <div class="hey">Sheesh!</div>
-      <div class="logo" tabindex="0" aria-label="Rosyimuth logo">
-        <div class="logo-top">
-          <img src="src/png/navatar-rosyi.png" alt="animation-head" id="nav-avatar"/>
-        </div>
-      </div>
-      <div class="navbar-tabs" id="navbar-tabs">
-        <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
-            <a href="#home" tabindex="0" aria-label="Home menu button">
-              &#60;/Home&#62;
-            </a>
-          </li>
-
-          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
-            <a href="#about" aria-label="about menu button">
-              &#60;/AboutMe&#62;
-            </a>
-          </li>
-
-          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
-            <a href="#skills" aria-label="skills menu button">
-              &#60;/Skills&#62;
-            </a>
-          </li>
-
-          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#projects" aria-label="projects menu button">
-              &#60;/Portofolio&#62;
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- navbar tabs ends -->
-    </div>
-  </header>
-  <!-- header ends here -->
-
-  <main>
-    <!-- hamburger -->
-    <div class="hamburger" id="hamburger" data-aos="fade">
-      <div class="hamburgerbase">
-        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
-          <span class="burger-bar" id="burger-bar1"></span>
-          <span class="burger-bar" id="burger-bar2"></span>
-          <span class="burger-bar" id="burger-bar3"></span>
-        </button>
-      </div>
-    </div>
-    <!-- hamburger -->
-    <div class="mobiletogglemenu" id="mobiletogglemenu">
-      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
-          </a>
-        </li>
-
-        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
-          <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/AboutMe&#62;
-          </a>
-        </li>
-        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
-          <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Skills&#62;
-          </a>
-        </li>
-        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
-          <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Portofolio&#62;
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- mobile toggle menu ends -->
-
-    <section class="landing-page-container" id="home">
-      <div class="blob"></div>
-
-      <div class="text-content" style="margin-top: 8%;">
-        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">H</p>
-          <p class="jello">e</p>
-          <p class="jello">w</p>
-          <p class="jello">w</p>
-          <p class="jello">o</p>
-          <p class="jello">:</p>
-          <p class="jello">3</p>
-          &nbsp;
-          <p class="jello">A</p>
-          <p class="jello">k</p>
-          <p class="jello">u</p>
-        </article>
-        <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">R</p>
-          <p class="jello">o</p>
-          <p class="jello">s</p>
-          <p class="jello">y</p>
-          <p class="jello">i</p>
-          <p class="jello">d</p>
-          <p class="jello">a</p>
-          <p class="jello">h</p>
-          &nbsp;
-        </article>
-        <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">M</p>
-          <p class="jello">u</p>
-          <p class="jello">t</p>
-          <p class="jello">h</p>
-          <p class="jello">m</p>
-          <p class="jello">a</p>
-          <p class="jello">i</p>
-          <p class="jello">n</p>
-          <p class="jello">n</p>
-          <p class="jello">a</p>
-          <p class="jello">h</p>
-        </article>
-
-        <article id="work" data-aos="fade-up" data-aos-delay="400">
-          <div>
-            <p class="jello">W</p>
-            <p class="jello">e</p>
-            <p class="jello">b</p>
-          </div>
-          <div>
-            <p class="jello">D</p>
-            <p class="jello">e</p>
-            <p class="jello">v</p>
-            <p class="jello">e</p>
-            <p class="jello">l</p>
-            <p class="jello">o</p>
-            <p class="jello">p</p>
-            <p class="jello">m</p>
-            <p class="jello">e</p>
-            <p class="jello">n</p>
-            <p class="jello">t</p>
-            <p class="jello">.</p>
-          </div>
-        </article>
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:rosyimuth@gmail.com" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p>
-              <span class="letsTalkBtn-BG"></span>
-            </button></a>
-          <div class="setting-container" id="setting-container">
-            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
-
-            <label for="switchforsetting" class="needtobeinvert" id="labelforsetting" tabindex="0"
-              aria-label="settings for sound and appearance"></label>
-
-            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
-              <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
-              <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0"
-                aria-label="switch appearance"></label>
-            </div>
-
-            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
-              <input type="checkbox" id="switchforsound" onclick="playpause()" />
-              <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"
-                class="needtobeinvert"></label>
-            </div>
-          </div>
-          <!-- setting div ends -->
-        </div>
-        <!-- contact-btn-div -->
-      </div>
-     
-    </section>
-    <!-- landing page ends here -->
-    <section class="about-section-container" id="about" data-aos="fade-up">
-      <div class="about-section">
-        <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-
-        <div class="info-dp-section">
-          <div class="about-info" style="margin-right: 1.5rem;">
-            <p tabindex="0">
-              Halo! Nama saya Rosyidah Muthmainnah. Saya bersekolah di SMK Negeri 2 Depok Sleman, 
-              jurusan Sistem Informasi Jaringan dan Aplikasi (SIJA).
-              <br/><br/>
-              Saya mulai menikmati pengembangan web, dan proses ini telah mengajarkan saya banyak hal tentang desain dan pengembangan. 
-              Membuat fitur-fitur khusus untuk web memungkinkan saya untuk mengasah keterampilan saya dan terus berkembang dalam bidang ini.
-            </p>
-             <!-- Resume button -->
-      <button class="resume-btn" id="resume-btn" onclick="openURL()">
-        <div class="sign">
-          <svg viewBox="0 0 640 512">
-            <path
-              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
-          </svg>
-        </div>
-
-        <div class="text">Resume</div>
-      </button>
+            <p class="title">👩‍💻 Junior Web Developer</p>
           </div>
 
-          <div class="dp" data-aos="fade-up" style="margin-left: 1rem;">
-            <img src="src/png/rosyimuth.jpg" alt="Rosyimuth" tabindex="0" aria-label="image of Rosyi" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about section ends  -->
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-    <section class="skills-section-container" id="skills">
-      <div class="skills-section">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Skills&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <div class="frontend-dev-section">
-          <h3 class="frontend-dev-heading" data-aos="fade-up" tabindex="0"
-            aria-label="As a frontend a developer these are the skills i have">
-            Kemampuan Saya
-          </h3>
-          <ul class="tech-stack-wrapper">
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/htmllogo.png" alt="Html skill" class="tech-stack-logo" />
-              <span class="tooltip">HTML</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="mailto:rosyi.html@gmail.com"
+                  class="contact-link"
+                  >rosyi.html@gmail.com</a
+                >
+              </div>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/csslogo.png" alt="css skill" class="tech-stack-logo" />
-              <span class="tooltip">CSS</span>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">WhatsApp</p>
+
+                <a href="https://wa.me/+62-878-8353-8770" class="contact-link"
+                  >+62 878 8353 8770</a
+                >
+              </div>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/jslogo.png" alt="js skill" class="tech-stack-logo" />
-              <span class="tooltip">JS</span>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Yogyakarta, Indonesia</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/rosyimuth"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/bootstraplogo.png" alt="bootstrap skill" class="tech-stack-logo" />
-              <span class="tooltip">BOOTSTRAP</span>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/rosyimuth/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
             </li>
 
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/githublogo.png" alt="github skill" class="tech-stack-logo needtobeinvert" />
-              <span class="tooltip">GITHUB</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
-              <span class="tooltip">GIT</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/mysqllogo.png" alt="js skill" class="tech-stack-logo" />
-              <span class="tooltip">MYSQL</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/clogo.png" alt="c language skill" class="tech-stack-logo" />
-              <span class="tooltip">C</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/pylogo.png" alt="figma skill" class="tech-stack-logo" />
-              <span class="tooltip">PYTHON</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
-              <span class="tooltip">FIGMA</span>
-            </li>
-
-            <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/canvalogo.png" alt="canva skill" class="tech-stack-logo" />
-              <span class="tooltip">CANVA</span>
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/rosyimuth"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
             </li>
           </ul>
         </div>
+      </aside>
+
+      <!-- #main-content -->
+
+      <div class="main-content">
+        <!-- #NAVBAR -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Certificates</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- #ABOUT -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I am a creative, motivated, and solution-oriented individual with a deep passion for web development and UI/UX design. 
+              I enjoy creating websites that are not only visually appealing, but also user-friendly. 
+              For me, complex challenges are opportunities to come up with elegant and intuitive solutions.
+            </p>
+
+            <p>
+              With a strong background in web development, I have applied my skills in a variety of diverse projects. 
+              In addition, I also have an interest in embedded systems development and enjoy creating compelling graphic designs.
+            </p>
+            <section>
+              <button
+                onclick="window.location.href=''"
+                class="download-btn"
+              >
+                Download CV (.pdf)
+              </button>
+            </section>
+          </section>
+          
+
+          <!-- service -->
+
+          <section class="service">
+            <h3 class="h3 service-title">My Skills</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Design</h4>
+                  <ul style="justify-content: flex-start; display: flex; gap: 0.4rem; ">
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-figma"></ion-icon>
+                      </a>
+                    </li>
+
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-wordpress"></ion-icon>
+                      </a>
+                    </li>
+        
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-html5"></ion-icon>
+                      </a>
+                    </li>
+        
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-css3"></ion-icon>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <p class="service-item-text">
+                    Able to design websites that are attractive, responsive, and in accordance with user needs.
+                  </p>
+                  
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+                  <ul style="justify-content: flex-start; display: flex; gap: 0.4rem; ">
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-html5"></ion-icon>
+                      </a>
+                    </li>
+        
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-css3"></ion-icon>
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-javascript"></ion-icon>
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-python"></ion-icon>
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-nodejs"></ion-icon>
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-laravel"></ion-icon>
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="code-working"></ion-icon>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <p class="service-item-text">
+                    Experienced in using HTML, CSS, JavaScript, and 
+                    Laravel framework to build functional and optimized websites.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">UI/UX Design</h4>
+                  <ul style="justify-content: flex-start; display: flex; gap: 0.4rem; ">
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="logo-figma"></ion-icon>
+                      </a>
+                    </li>
+        
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="create"></ion-icon>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <p class="service-item-text">
+                    Prioritize user experience by creating an intuitive and efficient interface design.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/management.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Project Management</h4>
+                  <ul style="justify-content: flex-start; display: flex; gap: 0.4rem; ">
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="document-text"></ion-icon>
+                      </a>
+                    </li>
+        
+                    <li class="social-item">
+                      <a
+                        href="#"
+                        class="social-link"
+                      >
+                        <ion-icon name="calendar"></ion-icon>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <p class="service-item-text">
+                    Manage projects with careful planning, good team coordination, 
+                    and timely execution to achieve maximum results.
+                  </p>
+                </div>
+              </li>
+            </ul> 
+          </section>
+          <section style="margin-bottom: 0px;">
+            <button
+              onclick="window.location.href=''"
+              class="download-btn"
+            >
+              Download Portfolio (.pdf)
+            </button>
+          </section>
+          <br />
+
+          <!--
+          - My Organization
+        -->
+
+          <!-- <section class="testimonials">
+            <h3 class="h3 testimonials-title">Organization Experience</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/BPPK.png"
+                      alt="Rosyimuth"
+                      width="40"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    BPPK Stembayo
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Actively participated in the Stembayo Knowledge and Literature Application Section (BPPK), 
+                      supporting various activities aimed at deepening knowledge and appreciation of literature, 
+                      both in academic activities and student creativity development.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/SNB.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    SNB Stembayo
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Participated in extracurricular Japanese activities, 
+                      which include language training, Japanese culture, 
+                      and various related competitions.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/BPPK.png"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Karista Stembayo
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Involved in extracurricular activities of Student Scientific Work, 
+                      which focuses on developing scientific thinking skills and preparing scientific papers in various fields.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section> -->
+
+          <!--
+          - testimonials modal
+        -->
+
+          <!-- <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Rosyimuth"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Rosyimuth</h4>
+
+                <time datetime="2022-2024">2022 - 2024</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div> -->
+        </article>
+
+        <!-- #RESUME -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+          <br />
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  SMK Negeri 2 Depok Sleman, Yogyakarta
+                </h4>
+                <p class="timeline-text">
+                  Information System, Network, and Application (SIJA)
+                </p>
+                <span>2022 - Present</span>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">SMP Negeri 1 Depok Sleman, Yogyakarta</h4>
+
+                <span>2019 - 2022</span>
+
+                <p class="timeline-text">
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  SD Muhammadiyah Condongcatur, Depok, Sleman, Yogyakarta
+                </h4>
+
+                <span>2013 - 2019</span>
+
+                <p class="timeline-text">
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+              <div class="title-wrapper">
+                <div class="icon-box">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+  
+                <br />
+                <h3 class="h3">Organization Experience</h3>
+              </div>
+          </section>
+
+          <section class="testimonials">
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/BPPK.png"
+                      alt="Rosyimuth"
+                      width="40"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    BPPK Stembayo
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Actively participated in the Stembayo Knowledge and Literature Application Section (BPPK), 
+                      supporting various activities aimed at deepening knowledge and appreciation of literature, 
+                      both in academic activities and student creativity development.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/SNB.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    SNB Stembayo
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Participated in extracurricular Japanese activities, 
+                      which include language training, Japanese culture, 
+                      and various related competitions.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/BPPK.png"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Karista Stembayo
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Involved in extracurricular activities of Student Scientific Work, 
+                      which focuses on developing scientific thinking skills and preparing scientific papers in various fields.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Rosyimuth"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Rosyimuth</h4>
+
+                <time datetime="2022-2024">2022 - 2024</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="extension-puzzle-outline"></ion-icon>
+              </div>
+
+              <br />
+              <h3 class="h3">Project Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Sistem Inventaris Barang</h4>
+
+                <span>September 2024 — Present</span>
+
+                <p class="timeline-text">
+                  I designed a user-friendly interface for a Laravel-based inventory system, 
+                  with features such as stock management, transaction recording, and simple reports. 
+                  The system was successfully implemented locally and helped users to manage inventory data in a more structured way, 
+                  reduce manual recording time, and improve data accuracy. Source code & other details:<a
+                    href="https://github.com/rosyimuth/"
+                    >Sinvent</a
+                  >
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">FoodTopia Resep Masakan</h4>
+
+                <span>January 2024 — May 2024</span>
+
+                <p class="timeline-text">
+                  I developed an interface using Bootstrap 5, HTML, CSS, and JavaScript for a recipe sharing platform. 
+                  With a responsive and attractive design, the platform makes it easier for users to browse, 
+                  save and share recipes. As a result, the interface is more convenient to use on various devices, 
+                  including mobile phones and tablets, and has received positive feedback from users. 
+                  Source code & other details:<a
+                    href="https://github.com/rosyimuth/UI-FoodTopia"
+                    >FoodTopia</a
+                  >
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://rosyimuth.my.id/"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/portfolio.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Rosyimuth Portfolio</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://playground.skilvul.com/preview/cltuygg2fq2zm01mgs1sr43p5"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/uifoodsystem.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">FoodSystem</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://foodtopia.rosyimuth.my.id/"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/uifoodtopia.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">FoodTopia</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a
+                  href="https://sinvent.rosyimuth.my.id/dashboard"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/uisinvent.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">System Inventory</h3>
+
+                  <p class="project-category">Application</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a
+                  href="https://www.figma.com/proto/VUUZyiqedhWjAGNIa30zTM/BelajarIn---Rosyidah-Muthmainnah?node-id=3-2"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/BelajarIn.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">BelajarIn</h3>
+
+                  <p class="project-category">Web UI/UX Design</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #certificates
+      -->
+
+        <article class="certificates" data-page="certificates">
+          <header>
+            <h2 class="h2 article-title">Certificates</h2>
+          </header>
+
+          <section class="certificates-posts">
+            <ul class="certificates-posts-list">
+              
+              <li class="certificates-post-item">
+                <a href="https://www.dicoding.com/certificates/MRZMER39KPYQ">
+                  <figure class="certificates-banner-box">
+                    <img
+                      src="./assets/images/certificates/FE WebDev Funda.png"
+                      alt="FE WebDev Funda"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="certificates-content">
+                    <div class="certificates-meta">
+                      <p class="certificates-category">Dicoding</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">July 12, 2024</time>
+                    </div>
+
+                    <h3 class="h3 certificates-item-title">Learn Front-End Web Development Fundamentals</h3>
+
+                    <p class="certificates-text">
+                      
+                    </p>
+                  </div>
+                </a>
+              </li>              
+
+              <li class="certificates-post-item">
+                <a href="https://www.linkedin.com/posts/rosyimuth_alhamdulillah-bisa-masuk-ke-tahap-semi-final-activity-7170380818119417856-WAC_?utm_source=share&utm_medium=member_desktop">
+                  <figure class="certificates-banner-box">
+                    <img
+                      src="./assets/images/certificates/semifinalist LDN2024.png"
+                      alt="LDN2024"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="certificates-content">
+                    <div class="certificates-meta">
+                      <p class="certificates-category">Skilvul</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2024">Mar 2024</time>
+                    </div>
+
+                    <h3 class="h3 certificates-item-title">
+                      Liga Digital Nasional 2024 - Web Development
+                    </h3>
+
+                    <p class="certificates-text">
+                      
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="certificates-post-item">
+                <a href="https://badgr.com/public/assertions/_i4jnvTeQd6_cbLA7-teTg?identity__email=rosyimuth@gmail.com">
+                  <figure class="certificates-banner-box">
+                    <img
+                      src="./assets/images/certificates/WebDevChall Skilvul.png"
+                      alt="Apple Vision Pro"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="certificates-content">
+                    <div class="certificates-meta">
+                      <p class="certificates-category">Skilvul</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Mar 2024</time>
+                    </div>
+
+                    <h3 class="h3 certificates-item-title">Beginner Web Development - Special Challenge (Gold)</h3>
+
+                    <p class="certificates-text">
+                      
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="certificates-post-item">
+                <a href="https://www.dicoding.com/certificates/07Z6WJVL2ZQR">
+                  <figure class="certificates-banner-box">
+                    <img
+                      src="./assets/images/certificates/BasicWeb.png"
+                      alt="BeginnerWeb"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="certificates-content">
+                    <div class="certificates-meta">
+                      <p class="certificates-category">Dicoding</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Feb 4, 2024</time>
+                    </div>
+
+                    <h3 class="h3 certificates-item-title">
+                      Learn Web Programming Basics</h3>
+
+                    <p class="certificates-text">
+                      
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="certificates-post-item">
+                <a href="https://cyberjawara.id/certificate/q0mz47d1/v">
+                  <figure class="certificates-banner-box">
+                    <img
+                      src="./assets/images/certificates/finalist CJ2023.png"
+                      alt="CJ2023"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="certificates-content">
+                    <div class="certificates-meta">
+                      <p class="certificates-category">Cyber Jawara</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2023">Dec 2023</time>
+                    </div>
+
+                    <h3 class="h3 certificates-item-title">National Hacking Competition 2023</h3>
+
+                    <p class="certificates-text">
+                      
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- #CONTACT -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="mailto:rosyi.html@gmail.com"
+                  class="contact-link"
+                  >rosyi.html@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="globe"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Websites</p>
+
+                <a href="https://rosyimuth.my.id/" class="contact-link"
+                  >rosyimuth.my.id</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">WhatsApp</p>
+
+                <a href="https://wa.me/+62-878-8353-8770" class="contact-link"
+                  >+62 878 8353 8770</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Instagram</p>
+
+                <a href="https://www.instagram.com/rosyimuth/" class="contact-link"
+                  >@rosyimuth</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+  
+                <div class="contact-info">
+                  <p class="contact-title">LinkedIn</p>
+  
+                  <a href="https://www.linkedin.com/in/rosyimuth/" class="contact-link"
+                    >Rosyidah Muthmainnah</a
+                  >
+                </div>
+            </li>
+
+            <li class="contact-item">
+                <div class="icon-box">
+                  <ion-icon name="logo-github"></ion-icon>
+                </div>
+  
+                <div class="contact-info">
+                  <p class="contact-title">Github</p>
+  
+                  <a href="https://github.com/rosyimuth/" class="contact-link"
+                    >Rosyimuth</a
+                  >
+                </div>
+            </li>
+          </ul>
+          <br>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="location-sharp"></ion-icon>
+              </div>
+
+              <br />
+              <h4 class="h4">My Location</h4>
+            </div>
+        </section>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505883.9105064168!2d110.0945950882238!3d-7.87223786001346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x6d1b92b2cac8b3f0!2sSpecial%20Region%20of%20Yogyakarta%2C%20Indonesia!5e0!3m2!1sen!2slk!4v1736049297837!5m2!1sen!2slk"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+        </article>
       </div>
-    </section>
-    <!-- skills section ends -->
-    <section class="projects-section-container" id="projects" style="height: fit-content;">
-      <div class="projects-section-div">
-        <div class="section-heading" data-aos="fade-up">
-          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            &#60;/Portfolio&#62;
-          </h2>
-          <p class="sectionHeadingP"></p>
-        </div>
-        <div class="project-boxes-div">
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/png/foodtopia-logo.png" alt="pexelicon website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">FoodTopia</article>
-                <p class="ProjectDescription">
-                  FoodTopia: Koleksi resep masakan yang mengundang Anda untuk menjelajahi dunia rasa dan kreativitas kuliner. 
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/rosyimuth?tab=repositories" target="_blank" class="github-redirect"
-                    aria-label="Visit FoodTopia on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://rosyimuth.sija-bridge.tech/ui-foodtopia/" target="_blank" class="cta"
-                    aria-label="Visit FoodTopia Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/png/foodtopia-project.png" alt="FoodTopia website preview image" />
-              </div>
-            </div>
-          </div>
+    </main>
 
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/png/favicon.png" alt="pexelicon website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">Rosyimuth | Portofolio</article>
-                <p class="ProjectDescription">
-                  Rosyimuth punya portofolio nih hehehe;p
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/rosyimuth/rosyimuth-portofolio" target="_blank" class="github-redirect"
-                    aria-label="Visit Rosyimuth on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://rosyimuth.sija-bridge.tech/Rosyimuth-Portofolio/" target="_blank" class="cta"
-                    aria-label="Visit Rosyimuth Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/png/porto-project.png" alt="FoodTopia website preview image" />
-              </div>
-            </div>
-          </div>
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
 
-          <div class="section-heading" data-aos="fade-up">
-            <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-              &#60;/Certificate&#62;
-            </h2>
-            <p class="sectionHeadingP"></p>
-          </div>
-
-          <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box5" id="project-box5">
-              <div class="info-div">
-                <img src="src/png/cjlogo.png" alt="comickaze website favicon"
-                  class="faviconforProject" />
-                <article class="ProjectHeading">Finalis CJ2023 Kategori Pelajar</article>
-                <p class="ProjectDescription">
-                  Sertifikasi Finalis Cyber Jawara 2023 Kategori Pelajar
-                </p>
-                <div class="project-buttons">
-                  <a href="https://cyberjawara.id/certificate/q0mz47d1/v" target="_blank" class="cta" aria-label="Visit Comickaze live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/png/finalist CJ2023.png" alt="website preview image" />
-              </div>
-            </div>
-          </div>
-
-          <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box5" id="project-box5">
-              <div class="info-div">
-                <img src="src/png/skilvullogo.png" alt="comickaze website favicon"
-                  class="faviconforProject" />
-                <article class="ProjectHeading">Semifinalis LDN2024 Kategori SMK</article>
-                <p class="ProjectDescription">
-                  Sertifikasi semifinalis Liga Digital Nasional 2024 Kategori SMK
-                </p>
-                <div class="project-buttons">
-                  <a href="https://drive.google.com/file/d/1uwqVJRjth3Rg-5bTC484O-Py1g4xBT5Y/view?usp=sharing" target="_blank" class="cta" aria-label="Visit Comickaze live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/png/Rosyidah Muthmainnah - Sertifikat Tahap Semifinal WebDevelopment - Liga Digital Nasional_page-0001.jpg" alt="website preview image" />
-              </div>
-            </div>
-          </div>
-
-          <!-- ---------------------- -->
-          <!-- <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/svg/aquaregia-favicon.svg" alt="Aquaregia website favicon"
-                  class="faviconforProjectAquaregia" />
-                <article class="ProjectHeading">Aquaregia</article>
-                <p class="ProjectDescription">
-                  A website for University Maharaja College fest "Aquaregia"
-                  for event registrations.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/rosyimuth07/Aquaregia" target="_blank" class="github-redirect"
-                    aria-label="Visit Aquaregia on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://rosyimuth.site/Aquaregia/" target="_blank" class="cta"
-                    aria-label="Visit Aquaregia Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/webp/Aquaregia-project.webp" alt="Aquaregia website preview image" />
-              </div>
-            </div>
-          </div> -->
-          <!-- ---------------------- -->
-          <!-- <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box4" id="project-box4">
-              <div class="info-div">
-                <img src="src/webp/qr-favicon.webp" alt="Qr generator website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">QR Generator</article>
-                <p class="ProjectDescription">
-                  A webpage to make a QR Code from text using API.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/rosyimuth07/QR-Generator" target="_blank" class="github-redirect"
-                    aria-label="Visit qr generator on github">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://rosyimuth.site/QR-Generator/" target="_blank" class="cta"
-                    aria-label="Visit qr generator live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/webp/QRgeneratorProject.webp" alt="qr generator website preview image" />
-              </div>
-            </div>
-          </div> -->
-
-          <!-- ---------------------- -->
-          <!-- <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box3" id="project-box3">
-              <div class="info-div">
-                <img src="src/ico/netflixfavicon.ico" alt="netflix website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">React Netflix Clone</article>
-                <p class="ProjectDescription">
-                  A webpage to categorize the shows to redirect user to watch
-                  the show.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/rosyimuth07/Netflix-clone" target="_blank" class="github-redirect"
-                    aria-label="Visit Netflix clone on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://react-project-20.netlify.app/" target="_blank" class="cta"
-                    aria-label="Visit netflix clone live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/webp/NetflixCloneProject.webp" alt="netflix clone website preview image" />
-              </div>
-            </div>
-          </div> -->
-
-          <!-- ---------------------- -->
-
-          <!-- <div class="project-box-wrapper" data-aos="fade-up">
-            <div class="project-box project-box1" id="project-box1">
-              <div class="info-div">
-                <img src="src/webp/axocean-favicon.webp" alt="Axocean website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">AXOCEAN</article>
-                <p class="ProjectDescription">
-                  E-commerce website frontend work to choose people their
-                  favorite design of product and redirect to flipkart shopping
-                  site.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/rosyimuth07/AXOCEAN" target="_blank" class="github-redirect"
-                    aria-label="Visit axocean on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://www.rosyimuth.site/AXOCEAN/" target="_blank" class="cta"
-                    aria-label="Visit axocean live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/webp/AXOCEAN-project.webp" alt="Axocean website preview image" />
-              </div>
-            </div>
-          </div> -->
-          <!-- ---------------------- -->
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- main ends here -->
-
-  <footer id="footer">
-    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
-      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
-    </button>
-    <div class="footer-background">
-      <div class="footer-blob"></div>
-    </div>
-    <div class="footer-foreground">
-      <div class="footercontainer">
-        <div class="social-media-container">
-          <div class="getintouch-heading">
-            <article style="margin-top: 5%;">GetinTouch();</article>
-          </div>
-          <div class="logos">
-            <a href="https://www.instagram.com/rosyimuth/" target="_blank" tabindex="0"
-              aria-label="My instagram"><svg viewBox="0 0 448 512" class="SocialHandle">
-                <path
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-              </svg></a>
-
-            <a href="https://www.linkedin.com/in/rosyimuth/" target="_blank"
-              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
-                <path
-                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-              </svg></a>
-
-            <a href="https://github.com/rosyimuth" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
-                class="SocialHandle">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-              </svg></a>
-
-            <a href="mailto:rosyimuth@gmail.com" target="_blank" aria-label="My G mail"><svg id="GmailLogo"
-                viewBox="0 0 512 512">
-                <path
-                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-              </svg></a>
-          </div>
-        </div>
-        <div class="footer-avatar-container">
-          <img src="src/png/footerava-rosyi.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
-          <div class="footer-avatar-face">
-            <div class="footer-avatar-eye footer-left-eye">
-              <div class="footer-pupil"></div>
-            </div>
-            <div class="footer-avatar-eye footer-right-eye">
-              <div class="footer-pupil"></div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <article>
-            Design & Built by Rosyimuth
-            &#169; 2024
-          </article>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- footer ends here -->
-
-  <script src="main.js"></script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <script>
-    function openURL() {
-      var url = "src/pdf/Resume Rosyidah Muthmainnah.pdf";
-
-      window.open(url, "_blank");
-    }
-  </script>
-
-  <script>
-    const cursorInner = document.getElementById("cursor-inner");
-    const cursorOuter = document.getElementById("cursor-outer");
-    const links = document.querySelectorAll("a,label,button");
-
-    document.addEventListener("mousemove", function (e) {
-      const posX = e.clientX;
-      const posY = e.clientY;
-
-      cursorInner.style.left = `${posX}px`;
-      cursorInner.style.top = `${posY}px`;
-
-      // cursorOuter.style.left = `${posX}px`;
-      // cursorOuter.style.top = `${posY}px`;
-
-      cursorOuter.animate(
-        {
-          left: `${posX}px`,
-          top: `${posY}px`,
-        },
-        { duration: 500, fill: "forwards" }
-      );
-
-      links.forEach((link) => {
-        link.addEventListener("mouseenter", () => {
-          cursorInner.classList.add("hover");
-          cursorOuter.classList.add("hover");
-        });
-        link.addEventListener("mouseleave", () => {
-          cursorInner.classList.remove("hover");
-          cursorOuter.classList.remove("hover");
-        });
-      });
-    });
-  </script>
-</body>
-
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
